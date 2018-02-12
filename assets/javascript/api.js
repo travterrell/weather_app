@@ -70,6 +70,7 @@ function weatherAPI() {
           $('body').addClass("rain_bg")
           break;
       case "Cloudy":
+      case "Clouds":
           $('body').addClass("cloudy_bg")
           break;
       case "Mist":
