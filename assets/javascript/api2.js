@@ -1,9 +1,7 @@
 // Weather Class //
 
 function weatherAPI() {
-  this.api = "https://fcc-weather-api.glitch.me/api/current?";
-  this.lat = parseFloat(38.49);
-  this.lon = parseFloat(-121.35);
+  this.api = "https://api.openweathermap.org/data/2.5/weather?id=5389489&units=metric&APPID=38d5ef996012a212335784b0f794fdff";
   this.tempUnit = 'C';
   this.currentTempInCelsius = null;
 
@@ -31,7 +29,7 @@ function weatherAPI() {
       var me = this;
       // var urlString = this.api + this.lat + "&" + this.lon;
       $.ajax({
-        url: "https://fcc-weather-api.glitch.me/api/current?lat=38.49&lon=-121.35",
+        url: this.api,
         beforeSend: function () {
           $(".loading_image").show();
         },

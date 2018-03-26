@@ -134,6 +134,12 @@ h1 {
 	display: none;
 }
 
+@media only screen and (max-height: 480px) {
+    h1 {
+        padding-top: 14vh;
+    }
+}
+
 p {
 	font-size: 25px;
 	line-height: 35px;
